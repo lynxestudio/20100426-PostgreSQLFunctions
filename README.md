@@ -23,6 +23,8 @@ Seguridad los datos solo están accesibles mediante las funciones y evita el uso
 <p align="justify">
 De los lenguajes más utilizados para crear funciones en postgreSQL, se encuentra PL/pgSQL, el cual se distribuye como un módulo cargable junto con postgreSQL, para emplearlo en nuestra base de datos es necesario darlo de alta, de la siguiente manera.
 Para agregar el soporte a PL/SQL en caso que la base de datos no la soporte se ejecuta el siguiente comando:
+</p>
+<p align="justify">
 <tt>createlang plpgsql [database]</tt>
 en nuestro ejemplo:
 <tt>createlang plpgsql pubs</tt>
@@ -30,6 +32,8 @@ en nuestro ejemplo:
 <p align="justify">
 Revisamos si ya lo tenemos disponible en nuestra base de datos para utilizarlo La sintaxis de PL/pgSQL (similar al lenguaje PL/SQL de Oracle)
 Para comprobar la instalación del lenguaje PL/SQL.
+</p>
+<p align="justify">
 <tt>psql [database] -c "select oid,lanname from pg_language"</tt>
 <tt>
   oid  | lanname  
@@ -61,10 +65,12 @@ Ahora usamos la siguiente función AddCities(varchar) para tomar los valores de 
 <div align="center">
 	<img src="addcities.png"/>
 </div>
+<p align="justify">
 Lo compilamos
 
 <tt>mcs /t:winexe -r:System.Data,Npgsql -pkg:gtk-sharp-2.0 ExecutePgFunction.cs</tt>
-
+</p>
+<p align="justify">
 Podemos probar nuestro programa invocando la funcion version() predeterminada de PostgreSQL.
 
 Fig 6 Ejecutando la función version() de PostgreSQL
@@ -77,7 +83,7 @@ Fig 7 El programa ejecutando función version().
 <div align="center">
 	<img src="ado3_fig7.jpg"/>
 </div>
-
+</p>
 <p align="justify">
 Aquí el driver de PostgreSQL para .NET ejecuta la función usando la clase NpgsqlCommand la cual recibe como argumento el nombre de la función y la conexión al servidor donde se encuentra.
 </p>
