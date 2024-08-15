@@ -26,7 +26,11 @@ Para agregar el soporte a PL/SQL en caso que la base de datos no la soporte se e
 </p>
 <p align="justify">
 <tt>createlang plpgsql [database]</tt>
+</p>
+<p align="justify">
 en nuestro ejemplo:
+</p>
+<p align="justify">
 <tt>createlang plpgsql pubs</tt>
 </p>
 <p align="justify">
