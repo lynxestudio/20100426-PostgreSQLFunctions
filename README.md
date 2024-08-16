@@ -108,5 +108,5 @@ Para mayor referencia no olvidar leer la documentación del data provider para P
 </p>
 <div><b>Fig 5. El programa ejecutando la función AddCities.</b></div>
 <div align="center">
-	<img src="ado3_fig8.jpg"/>
+	<img src="images/ado3_fig8.jpg"/>
 </div>
