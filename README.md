@@ -75,7 +75,7 @@ Ahora usamos la siguiente función AddCities(varchar) para tomar los valores de 
 Lo compilamos
 </p>
 <p align="justify">
-<tt>mcs /t:winexe -r:System.Data,Npgsql -pkg:gtk-sharp-2.0 ExecutePgFunction.cs</tt>
+<tt>mcs /t:winexe -r:System.Data,Npgsql -pkg:gtk-sharp-3.0 PgForm.cs</tt>
 </p>
 <p align="justify">
 Podemos probar nuestro programa invocando la funcion version() predeterminada de PostgreSQL.
