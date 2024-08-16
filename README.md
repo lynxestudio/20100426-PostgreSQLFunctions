@@ -24,21 +24,23 @@ Seguridad los datos solo están accesibles mediante las funciones y evita el uso
 De los lenguajes más utilizados para crear funciones en postgreSQL, se encuentra PL/pgSQL, el cual se distribuye como un módulo cargable junto con postgreSQL, para emplearlo en nuestra base de datos es necesario darlo de alta, de la siguiente manera.
 Para agregar el soporte a PL/SQL en caso que la base de datos no la soporte se ejecuta el siguiente comando:
 </p>
-<p align="justify">
+<p>
 <tt>createlang plpgsql [database]</tt>
 </p>
 <p align="justify">
 en nuestro ejemplo:
 </p>
-<p align="justify">
+<p>
 <tt>createlang plpgsql pubs</tt>
 </p>
 <p align="justify">
 Revisamos si ya lo tenemos disponible en nuestra base de datos para utilizarlo La sintaxis de PL/pgSQL (similar al lenguaje PL/SQL de Oracle)
 Para comprobar la instalación del lenguaje PL/SQL.
 </p>
-<p align="center">
-<tt>psql [database] -c "select oid,lanname from pg_language"</tt>
+<p>
+<tt>$ psql [database] -c "select oid,lanname from pg_language"</tt>
+</p>
+<p>
 <tt>
   oid  | lanname  
 -------+----------
@@ -56,15 +58,18 @@ En este ejemplo usaremos PL/pgSQL y C# para resolver un requerimiento practico c
 <p align="justify">
 La relación deberá de quedar de la siguiente manera, donde la columna city se debe cambiar por la clave primaria de la tabla cities que tendrá como clave primaria la clave de la ciudad y una columna adicional llamada city que contendrá el nombre de la ciudad.
 </p>
-Fig Diagrama entidad relacion
+<p>
+<b>Fig 1. Diagrama entidad relacion.</b>
 <div align="center">
 	<img src="images/RelationCities.png"/>
 </div>
+</p>
 <p align="justify">
 Ahora usamos la siguiente función AddCities(varchar) para tomar los valores de la columna city en la tabla authors, crear un identificador único para la llave primaria, insertar ese valor de clave primaria junto con el nombre de la ciudad y por último sustituir los valores en la columna city y reemplazarlos con el valor de la llave primaria en la tabla cities.
 </p>
+<div><b>Fig 2. Texto de AddCities</b></div>
 <div align="center">
-	<img src="addcities.png"/>
+	<img src="images/addcities.png"/>
 </div>
 <p align="justify">
 Lo compilamos
@@ -75,31 +80,33 @@ Lo compilamos
 <p align="justify">
 Podemos probar nuestro programa invocando la funcion version() predeterminada de PostgreSQL.
 
-Fig 6 Ejecutando la función version() de PostgreSQL
+<div><b>Fig 3. Ejecutando la función version() de PostgreSQL</b></div>
 <div align="center">
-	<img src="ado3_fig6.jpg"/>
+	<img src="images/ado3_fig6.jpg"/>
 </div>
 Al ejecutar la función sin argumentos desde el formulario se vera el mismo resultado.
 
-Fig 7 El programa ejecutando función version().
+<div><b>Fig 4. El programa ejecutando función version().</b></div>
 <div align="center">
-	<img src="ado3_fig7.jpg"/>
+	<img src="images/ado3_fig7.jpg"/>
 </div>
 </p>
 <p align="justify">
 Aquí el driver de PostgreSQL para .NET ejecuta la función usando la clase NpgsqlCommand la cual recibe como argumento el nombre de la función y la conexión al servidor donde se encuentra.
 </p>
+<p>
 <tt>NpgsqlCommand cmd = new NpgsqlCommand(“version”, conn);</tt>
+</p>
 <p align="justify">
 Si la función recibe parámetros, debemos de crear una instancia de la clase NpgsqlParameter() por cada uno de los parametros que reciba, es muy importante no olvidar indicarle a la clase NpgsqlCommand que el comando que ejecutaremos es un stored procedure o una función pl/sql, esto lo hacemos mediante la instrucción:
 </p>
-<p align="center">
+<p>
 <tt>cmd.CommandType = System.Data.CommandType.StoredProcedure;</tt>
 </p>
 <p align="justify">
 Para mayor referencia no olvidar leer la documentación del data provider para PostgreSQL. Si todo es ejecutado correctamente, ya podemos probar la función AddCities con el argumento del nombre de la ciudad y debe devolvernos la clave primaria de la tabla cities.
 </p>
-Fig 8 El programa ejecutando la función AddCities
+<div><b>Fig 5. El programa ejecutando la función AddCities.</b></div>
 <div align="center">
 	<img src="ado3_fig8.jpg"/>
 </div>
