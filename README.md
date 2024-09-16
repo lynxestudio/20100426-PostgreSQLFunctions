@@ -67,10 +67,6 @@ La relación deberá de quedar de la siguiente manera, donde la columna city se 
 <p align="justify">
 Ahora usamos la siguiente función AddCities(varchar) para tomar los valores de la columna city en la tabla authors, crear un identificador único para la llave primaria, insertar ese valor de clave primaria junto con el nombre de la ciudad y por último sustituir los valores en la columna city y reemplazarlos con el valor de la llave primaria en la tabla cities.
 </p>
-<div><b>Fig 2. Texto de AddCities</b></div>
-<div align="center">
-	<img src="images/addcities.png"/>
-</div>
 <p align="justify">
 Lo compilamos
 </p>
@@ -80,15 +76,23 @@ Lo compilamos
 <p align="justify">
 Podemos probar nuestro programa invocando la funcion version() predeterminada de PostgreSQL.
 
-<div><b>Fig 3. Ejecutando la función version() de PostgreSQL</b></div>
+<div><b>Fig 2. Ejecutando la función version() de PostgreSQL</b></div>
 <div align="center">
 	<img src="images/ado3_fig6.jpg"/>
 </div>
 Al ejecutar la función sin argumentos desde el formulario se vera el mismo resultado.
 
-<div><b>Fig 4. El programa ejecutando función version().</b></div>
+<div><b>Fig 3. El programa ejecutando función version().</b></div>
 <div align="center">
-	<img src="images/ado3_fig7.jpg"/>
+	<img src="images/image1.png"/>
+</div>
+<div><b>Fig 4. El programa ejecutando función quote_literal.</b></div>
+<div align="center">
+	<img src="images/image2.png"/>
+</div>
+<div><b>Fig 5. El programa ejecutando función bool.</b></div>
+<div align="center">
+	<img src="images/image3.png"/>
 </div>
 </p>
 <p align="justify">
@@ -106,7 +110,7 @@ Si la función recibe parámetros, debemos de crear una instancia de la clase Np
 <p align="justify">
 Para mayor referencia no olvidar leer la documentación del data provider para PostgreSQL. Si todo es ejecutado correctamente, ya podemos probar la función AddCities con el argumento del nombre de la ciudad y debe devolvernos la clave primaria de la tabla cities.
 </p>
-<div><b>Fig 5. El programa ejecutando la función AddCities.</b></div>
+<div><b>Fig 6. El programa ejecutando la función AddCities.</b></div>
 <div align="center">
 	<img src="images/ado3_fig8.jpg"/>
 </div>
