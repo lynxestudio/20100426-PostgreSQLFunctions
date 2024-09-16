@@ -1,0 +1,16 @@
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\Samples.PgFunctions.exe.config
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\Samples.PgFunctions.exe
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\Samples.PgFunctions.pdb
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\Mono.Security.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\Npgsql.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\Npgsql.pdb
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\Npgsql.xml
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\de\Npgsql.resources.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\es\Npgsql.resources.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\fi\Npgsql.resources.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\fr\Npgsql.resources.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\ja\Npgsql.resources.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\obj\Debug\Samples.PgFunctions.exe
+C:\Documents and Settings\Administrator\My Documents\SharpDevelop Projects\Samples.PgFunctions\Samples.PgFunctions\obj\Debug\Samples.PgFunctions.pdb
